@@ -19,7 +19,7 @@ function setup() {
 
 	addNoiseToCanvas2();
 
-	for (let i = 0; i < numPds; i++) {gi
+	for (let i = 0; i < numPds; i++) {
 		pds.push(createRandomDP())
 	} 
 }

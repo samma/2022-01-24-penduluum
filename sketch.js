@@ -19,15 +19,15 @@ function setup() {
 
 	addNoiseToCanvas2();
 
-	for (let i = 0; i < numPds; i++) {
+	for (let i = 0; i < numPds; i++) {gi
 		pds.push(createRandomDP())
 	} 
 }
 
 
 function createRandomDP() {
-	let p = new Pendulum(0,0, random(10, 100), random(0, TWO_PI), random(-0.3, 0.2), color(255), 1);
-	let p2 = new Pendulum(p.endOfLineX, p.endOfLineY, random(50, 150), random(0, TWO_PI), random(-0.3, 0.2), LabColor.RandomLabColor().getRGB(), 1);
+	let p = new Pendulum(0,0, random(10, 100), random(0, TWO_PI), random(0.1, 0.2), color(255), 1);
+	let p2 = new Pendulum(p.endOfLineX, p.endOfLineY, random(50, 150), random(0, TWO_PI), random(0.1, 0.2), LabColor.RandomLabColor().getRGB(), 1);
 	return new DoublePendulum(p, p2);
 }
 
